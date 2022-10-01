@@ -5,7 +5,11 @@ var bodyParser = require("body-parser");
 app.use(bodyParser.urlencoded({ extended: false }));
 
 app.get('/', function (req, res) {
-    res.sendFile(__dirname + '/views/pages/main.html');
+    res.sendFile(__dirname + '/views/main.html');
+});
+
+app.get('/contactus', function (req, res) {
+    res.sendFile(__dirname + '/views/contactus.html');
 });
 
 app.post('/submit-student-data', function (req, res) {
