@@ -23,6 +23,13 @@ app.get('/', (req, res) => {
     })
 })
 
+app.get('/pages/contactUs', (req, res) => {
+    res.render('pages/index', {
+        user,
+        title: "Home Page"
+    })
+})
+
 app.listen(port, () => {
   console.log(`App listening at port ${port}`)
 })
