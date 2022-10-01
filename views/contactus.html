@@ -5,7 +5,6 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="img/favicon.svg" type="image/svg">
 
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300&display=swap%27');
@@ -23,15 +22,12 @@ body {
         padding: 1%;
         max-width: 95%;
         text-align: center;
-        border: outset 2px #444;
-        background: #4290D8;
         border-radius: 100px;
-        text-shadow: -1px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
     }
     
     .header {
         padding-top: 20px;
-        color: #F5DFBB;
+        color: black;
         margin: auto;
         line-height: 50px;
     }
@@ -160,41 +156,8 @@ body {
             <br>
             <input type="submit" value="Send" onclick="openPopup()">
         </form>
-        <img id="contact" src="/img/contactus.png" alt="contactus">
+        <img id="contact" src="/images/contactus.png" alt="contactus">
     </div>
-    <div class="thankyou-popup" id="thankyou-popup">
-        <img src="/img/Confirmation_Icon.png" alt="tick">
-        <h2>Thank you!</h2>
-        <p>Your email has been successfully sent!
-        <br>
-        We will get back to you as soon as possible.
-        </p>
-        <a href="/" id="back">Back to the main page</a>
-    </div>
-    <script>
-        (function () {
-    emailjs.init('OlvXpRhzN0mp_r2d0');
-})();
-
-window.onload = function () {
-    document.getElementById('contact-form').addEventListener('submit', function (event) {
-        event.preventDefault();
-        var params = {
-            from_name: document.getElementById("user_name").value,
-            email_id: document.getElementById("user_email").value,
-            message: document.getElementById("message").value
-        }
-        emailjs.send('service_aar4kv5', 'template_xjczf8h', params)
-    });
-}
-    </script>
-    <script>function openPopup(){
-        if (document.getElementById("user_name").value != "" 
-        && document.getElementById("user_email").value != "" 
-        && document.getElementById("message").value != "") {
-            popup.classList.add("thankyou-openpopup");
-        }
-    }</script>
 </body>
 
 </html>
