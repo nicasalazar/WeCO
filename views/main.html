@@ -16,33 +16,34 @@
   <!-- Boostrap Library JS CDN -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
-  </script>
+    </script>
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300&display=swap%27');
 
 
-     /* Add a black background color to the top navigation */
-     .topnav {
-            background-color: #7DFF70;
-            overflow: hidden;
+    /* Add a black background color to the top navigation */
+    .topnav {
+      background-color: #7DFF70;
+      overflow: hidden;
 
-        }
+    }
 
-        /* Style the links inside the navigation bar */
-        .topnav a {
-            float: left;
-            color: black;
-            text-align: center;
-            padding: 14px 16px;
-            text-decoration: none;
-            font-size: 17px;
-        }
+    /* Style the links inside the navigation bar */
+    .topnav a {
+      float: left;
+      color: black;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 17px;
+    }
 
-        /* Change the color of links on hover */
-        .topnav a:hover {
-            background-color: #ddd;
-            color: black;
-        }
+    /* Change the color of links on hover */
+    .topnav a:hover {
+      background-color: #ddd;
+      color: black;
+    }
+
     * {
       font-family: 'Manrope', sans-serif;
     }
@@ -96,6 +97,21 @@
       cursor: pointer;
       margin-top: 1%;
       border-radius: 15px;
+    
+
+
+    }
+
+    .button1 {
+      position: absolute; 
+      right: 250px; 
+      bottom:200px; 
+    }
+
+    .button2 {
+      position: absolute; 
+      left: 1000px; 
+      bottom:200px; 
     }
 
     button:hover {
@@ -106,7 +122,10 @@
       font-size: 50pt;
       font-weight: bold;
       color: #0DDB36;
-      text-shadow: -1px 0 black, 0 1px black, 2px 0 black, 0 -1px black;
+      text-shadow: -1px 0 black, 0 1px black, 2px 0 black, 0 -1px black; 
+      position: absolute;
+      bottom: 500px; 
+      right: 300px; 
     }
 
     .res-circle {
@@ -119,7 +138,9 @@
 
       /* (C) NECESSARY TO POSITION TEXT BLOCK */
       line-height: 0;
-      position: relative;
+      position: absolute;
+      top: 250px; 
+      right: 285px;
     }
 
     /* (D) MATCH HEIGHT */
@@ -141,68 +162,100 @@
       font-weight: bold;
       color: yellow;
       text-shadow: -1px 0 black, 0 1px black, 2px 0 black, 0 -1px black;
-      font-size: 12pt;
+      font-size: 30pt;
     }
 
     footer {
-            text-align: center;
-            padding: 3px;
-            background-color: #7DFF70;
+      text-align: center;
+      padding: 3px;
+      background-color: #7DFF70;
 
-        }
+    }
 
-        footer a {
-            color: black;
-            text-align: center;
-            padding: 14px 16px;
-            text-decoration: none;
-            font-size: 17px;
-            background-color: #7DFF70;
-        }
+    footer a {
+      color: black;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 17px;
+      background-color: #7DFF70;
+    }
+
+    .welcome h1 {
+      font-size: 30px;
+      text-align: center;
+      margin-bottom: 50px;
+      margin-top: 50px; 
+    }
+    .image {
+      display: block;
+      width: 50%;
+
+      
+    }
   </style>
 </head>
 
 <body>
-  
+
   <div class="topnav">
     <a class="active" href="/views/main.html"><b>Home</b></a>
     <a href="/views/leaderboard.html"><b>Leaderboard</b></a>
     <a href="/views/eventgallery.html"><b>Event Gallery</b></a>
-</div>
+  </div>
+
+ 
+<div class="grid">
+  <div class="welcome">
+    <h1>Hey! Congrats on staying green :)</h1>
+  </div>
+
+
+    <img class="image" src="/images/green.jpg">
+
 
   <div id="app-name">WeCO</div>
   <div class="res-circle">
-    <div class="circle-txt">You've earned 77 points!
+    <div class="circle-txt">Points: 77
     </div>
   </div>
+
+  <div class="button1">
   <button type="Daily Mission" value="generate" onclick="openPopup()">Daily Mission</button>
+</div>
+
   <div class="thankyou-popup" id="thankyou-popup">
     <img src="/images/smileyface.svg" alt="smile" width="50" height="50">
     <h2><b>Bring your tumbler to work!</b></h2>
     <p>Reusable cup can help you to
       <br>
-      reduce the usage of paper or plastic cup!</p>
+      reduce the usage of paper or plastic cup!
+    </p>
     <a href="/" class="back">Back</a>
     <br>
     <a href="/eventgallery" class="back">Upload Photo</a>
   </div>
+  <div class="button2">
   <button type="Weekly Event" value="generate" onclick="openPopup1()">Weekly Event</button>
+  </div>
   <div class="thankyou-popup" id="group-popup">
     <img src="/images/smileyface.svg" alt="smile" width="50" height="50">
     <h2><b>Vegetarian Day!</b></h2>
     <p>Eating less meat can help reduce pressure on
       <br>forests and land used to grow animal feed.
       <br>
-      No meat today! Become a rabbit :)</p>
+      No meat today! Become a rabbit :)
+    </p>
     <a href="/" class="back">Back</a>
     <br>
     <a href="/eventgallery" class="back">Upload Photo</a>
   </div>
 
+
   <footer>
     <p class="about"><a href="/views/aboutus.html">About Us</a></p>
     <p class="contact"><a href="/views/contactus.html">Contact Us</a></p>
-</footer>
+  </footer>
 
   <script>
     const popup = document.getElementById("thankyou-popup");
