@@ -1,169 +1,168 @@
-    .thankyou-popup {
-      background-color: #07BB2B;
-      border-radius: 6px;
-      position: absolute;
-      text-align: center;
-      color: white;
-      font-weight: bold;
-      top: 30%;
-      left: 50%;
-      transform: translate(-50%, 0%);
-      visibility: hidden;
-      padding: 15px 30px 25px;
-      box-sizing: border-box;
-      font-family: 'patrick hand', cursive;
-    }
+.thankyou-popup {
+  background-color: #07BB2B;
+  border-radius: 6px;
+  position: absolute;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  visibility: hidden;
+  padding: 15px 30px 25px;
+  box-sizing: border-box;
+  font-family: 'patrick hand', cursive;
+}
 
-    .thankyou-openpopup {
-      visibility: visible;
-    }
+.thankyou-openpopup {
+  visibility: visible;
+}
 
-    .group-openpopup {
-      visibility: visible;
-    }
+.group-openpopup {
+  visibility: visible;
+}
 
-    .back {
-      text-decoration: none;
-      color: white;
-      padding: 8px 10px;
-      cursor: pointer;
-      border-radius: 4px;
-      background-color: #003CFF;
-    }
+.back {
+  text-decoration: none;
+  color: white;
+  padding: 8px 10px;
+  cursor: pointer;
+  border-radius: 4px;
+  background-color: #003CFF;
+}
 
-    .back:hover{
-      background-color: darkblue;
-    }
+.back:hover{
+  background-color: darkblue;
+}
 
-    .missionP{
-      margin-bottom: 10%;
-    }
+.missionP{
+  margin-bottom: 10%;
+}
 
-    button {
-      background-color: #003CFF;
-      border: none;
-      font-weight: bold;
-      color: white;
-      padding: 10px 20px;
-      text-decoration: none;
-      cursor: pointer;
-      margin-top: 1%;
-      border-radius: 15px;
-    }
+button {
+  background-color: #003CFF;
+  border: none;
+  font-weight: bold;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  cursor: pointer;
+  margin-top: 1%;
+  border-radius: 15px;
+}
 
-    .buttons{
-      display: grid;
-      grid-template-columns: 50% 50%;
-    }
+.buttons{
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
 
-    .button1 {
-      position: absolute; 
-      right: 150px; 
-      bottom:180px; 
-      grid-column: 1 / 1;
-    }
+.button1 {
+  position: absolute; 
+  right: 150px; 
+  bottom:180px; 
+  grid-column: 1 / 1;
+}
 
-    .button2 {
-      position: absolute; 
-      left: 900px; 
-      bottom:180px; 
-      grid-column: 2 / 2;
-    }
+.button2 {
+  position: absolute; 
+  left: 900px; 
+  bottom:180px; 
+  grid-column: 2 / 2;
+}
 
-    button:hover {
-      background-color: darkblue;
-    }
+button:hover {
+  background-color: darkblue;
+}
 
-    #app-name {
-      font-size: 50pt;
-      font-weight: bold;
-      color: #0DDB36;
-      text-shadow: -1px 0 black, 0 1px black, 2px 0 black, 0 -1px black; 
-      position: absolute;
-      bottom: 500px; 
-      right: 300px; 
-    }
+#app-name {
+  font-size: 50pt;
+  font-weight: bold;
+  color: #0DDB36;
+  text-shadow: -1px 0 black, 0 1px black, 2px 0 black, 0 -1px black; 
+  position: absolute;
+  bottom: 500px; 
+  right: 300px; 
+}
 
-    #app-name img{
-      display: block; 
-      width:80%; 
-      height:80%; 
-      position:relative; 
-      left: 110px; 
-    }
+#app-name img{
+  display: block; 
+  width:80%; 
+  height:80%; 
+  position:relative; 
+  left: 110px; 
+}
 
-    .res-circle {
-      /* (A) PERCENTAGE WIDTH & BORDER RADIUS */
-      width: 15%;
-      border-radius: 45%;
+.res-circle {
+  /* (A) PERCENTAGE WIDTH & BORDER RADIUS */
+  width: 15%;
+  border-radius: 45%;
 
-      /* (B) BACKGROUND COLOR */
-      background: #07BB2B;
+  /* (B) BACKGROUND COLOR */
+  background: #07BB2B;
 
-      /* (C) NECESSARY TO POSITION TEXT BLOCK */
-      line-height: 0;
-      position: absolute;
-      top: 250px; 
-      right: 285px;
-    }
+  /* (C) NECESSARY TO POSITION TEXT BLOCK */
+  line-height: 0;
+  position: absolute;
+  top: 250px; 
+  right: 285px;
+}
 
-    /* (D) MATCH HEIGHT */
-    .res-circle::after {
-      content: "";
-      display: block;
-      padding-bottom: 100%;
-    }
+/* (D) MATCH HEIGHT */
+.res-circle::after {
+  content: "";
+  display: block;
+  padding-bottom: 100%;
+}
 
-    /* (E) TEXT BLOCK */
-    .circle-txt {
-      /* (E1) CENTER TEXT IN CIRCLE */
-      position: absolute;
-      bottom: 60%;
-      width: 100%;
-      text-align: center;
+/* (E) TEXT BLOCK */
+.circle-txt {
+  /* (E1) CENTER TEXT IN CIRCLE */
+  position: absolute;
+  bottom: 60%;
+  width: 100%;
+  text-align: center;
 
-      /* (E2) THE FONT - NOT REALLY IMPORTANT */
-      font-weight: bold;
-      color: yellow;
-      text-shadow: -1px 0 black, 0 1px black, 2px 0 black, 0 -1px black;
-      font-size: 30pt;
-    }
-    .circle-txt2 {
-      /* (E1) CENTER TEXT IN CIRCLE */
-      position: absolute;
-      bottom: 40%;
-      width: 100%;
-      text-align: center;
+  /* (E2) THE FONT - NOT REALLY IMPORTANT */
+  font-weight: bold;
+  color: yellow;
+  text-shadow: -1px 0 black, 0 1px black, 2px 0 black, 0 -1px black;
+  font-size: 30pt;
+}
+.circle-txt2 {
+  /* (E1) CENTER TEXT IN CIRCLE */
+  position: absolute;
+  bottom: 40%;
+  width: 100%;
+  text-align: center;
 
-      /* (E2) THE FONT - NOT REALLY IMPORTANT */
-      font-weight: bold;
-      color: yellow;
-      text-shadow: -1px 0 black, 0 1px black, 2px 0 black, 0 -1px black;
-      font-size: 30pt;
-    }
-    .welcome h1 {
-      font-size: 30px;
-      text-align: center;
-      margin-bottom: 50px;
-      margin-top: 50px; 
-    }
-    .image {
-      display: block;
-      width: 50%;
-      position:absolute;
-      left: 20px; 
-    }
-    
-    button.event{
-    border-radius: 20px;
-    font-size: 25pt;
-    }
+  /* (E2) THE FONT - NOT REALLY IMPORTANT */
+  font-weight: bold;
+  color: yellow;
+  text-shadow: -1px 0 black, 0 1px black, 2px 0 black, 0 -1px black;
+  font-size: 30pt;
+}
+.welcome h1 {
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 50px;
+  margin-top: 50px; 
+}
+.image {
+  display: block;
+  width: 50%;
+  position:absolute;
+  left: 20px; 
+}
 
-  .goback{
-    margin-left:-40%;
-  }
+button.event{
+border-radius: 20px;
+font-size: 25pt;
+}
 
-  .face{
-    margin-left: 30%;
-  }
+.goback{
+margin-left:-40%;
+}
 
+.face{
+margin-left: 30%;
+}
