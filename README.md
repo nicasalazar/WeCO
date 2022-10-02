@@ -1,9 +1,9 @@
 # WeCO
 
 ## About WeCO Application
-entreprenHer is a platform designed by women for women to promote small businesses owned by women in your area. This app is designed for business owners by allowing them to:
+To motivate ourselves and fellow colleagues this app will allow continuous interaction and learning of the results in a lighter carbon footprint for the company and an overall healthier workplace for employees. 
 
-*📑 View daily eco missions *📸 Share videos/photos of your journey *🏆 Earn points & be the top WeCO
+* 📑 View daily eco missions * 📸 Share videos/photos of your journey * 🏆 Earn points & be the top WeCO
 
 ## Viewing The App
 ```
