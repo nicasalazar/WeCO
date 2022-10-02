@@ -84,6 +84,14 @@
       right: 300px; 
     }
 
+    #app-name img{
+      display: block; 
+      width:80%; 
+      height:80%; 
+      position:relative; 
+      left: 110px; 
+    }
+
     .res-circle {
       /* (A) PERCENTAGE WIDTH & BORDER RADIUS */
       width: 15%;
