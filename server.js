@@ -15,8 +15,8 @@ app.get('/', function (req, res) {
     res.sendFile(__dirname + '/views/login.html');
 });
 
-app.get('/login', function (req, res) {
-    res.sendFile(__dirname + '/views/login.html');
+app.get('/main', function (req, res) {
+    res.sendFile(__dirname + '/views/main.html');
 });
 
 app.get('/contactus', function (req, res) {
@@ -33,10 +33,6 @@ app.get('/aboutus', function (req, res) {
 
 app.get('/eventgallery', function (req, res) {
     res.sendFile(__dirname + '/views/eventgallery.html');
-});
-
-app.get('/login', function (req, res) {
-    res.sendFile(__dirname + '/views/login.html');
 });
 
 app.post('/submit-student-data', function (req, res) {
