@@ -49,6 +49,18 @@
       border-radius: 15px;
     }
 
+    .button1 {
+      position: absolute; 
+      right: 250px; 
+      bottom:200px; 
+    }
+
+    .button2 {
+      position: absolute; 
+      left: 1000px; 
+      bottom:200px; 
+    }
+
     button:hover {
       background-color: #0d66ba;
     }
@@ -57,7 +69,10 @@
       font-size: 50pt;
       font-weight: bold;
       color: #0DDB36;
-      text-shadow: -1px 0 black, 0 1px black, 2px 0 black, 0 -1px black;
+      text-shadow: -1px 0 black, 0 1px black, 2px 0 black, 0 -1px black; 
+      position: absolute;
+      bottom: 500px; 
+      right: 300px; 
     }
 
     .res-circle {
@@ -70,7 +85,9 @@
 
       /* (C) NECESSARY TO POSITION TEXT BLOCK */
       line-height: 0;
-      position: relative;
+      position: absolute;
+      top: 250px; 
+      right: 285px;
     }
 
     /* (D) MATCH HEIGHT */
@@ -92,5 +109,15 @@
       font-weight: bold;
       color: yellow;
       text-shadow: -1px 0 black, 0 1px black, 2px 0 black, 0 -1px black;
-      font-size: 12pt;
+      font-size: 30pt;
+    }
+    .welcome h1 {
+      font-size: 30px;
+      text-align: center;
+      margin-bottom: 50px;
+      margin-top: 50px; 
+    }
+    .image {
+      display: block;
+      width: 50%;
     }
