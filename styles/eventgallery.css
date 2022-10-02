@@ -38,3 +38,9 @@
     background-color: #DDD;
     cursor: pointer;
   }
+
+  .upload {
+    position: absolute; 
+    top: 5px;  
+    right: 50px; 
+  }
