@@ -14,6 +14,14 @@ app.get('/contactus', function (req, res) {
     res.sendFile(__dirname + '/views/contactus.html');
 });
 
+app.get('/aboutus', function (req, res) {
+    res.sendFile(__dirname + '/views/aboutus.html');
+});
+
+app.get('/eventgallery', function (req, res) {
+    res.sendFile(__dirname + '/views/eventgallery.html');
+});
+
 app.post('/submit-student-data', function (req, res) {
     var name = req.body.firstName + ' ' + req.body.lastNam
     

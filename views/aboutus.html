@@ -1,19 +1,197 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>aboutus</title>
+
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300&display=swap%27');
-        
-        * {
-        font-family: 'Manrope', sans-serif;
-        }
-        </style>
+
+            /* Add a black background color to the top navigation */
+            .topnav {
+                background-color: #7DFF70;
+                overflow: hidden;
+
+            }
+
+            /* Style the links inside the navigation bar */
+            .topnav a {
+                float: left;
+                color: black;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+                font-size: 17px;
+            }
+
+            /* Change the color of links on hover */
+            .topnav a:hover {
+                background-color: #ddd;
+                color: black;
+            }
+
+
+            * {
+                font-family: 'Manrope', sans-serif;
+            }
+
+            body {
+                padding: 0;
+            }
+
+            h1 {
+                margin: auto;
+                font-size: 20pt;
+                padding: 1%;
+                max-width: 95%;
+                text-align: center;
+                border-radius: 100px;
+            }
+
+            .header {
+                padding-top: 20px;
+                color: black;
+                margin: auto;
+                line-height: 50px;
+            }
+
+            .pic {
+                display: block;
+                margin-left: 600px;
+                width: 50%;
+
+            }
+
+            .slogan {
+                margin: auto;
+                font-size: 20pt;
+                padding: 1%;
+                max-width: 95%;
+                text-align: center;
+                border-radius: 100px;
+            }
+
+            .bios {
+                display: grid;
+                grid-template-columns: 30% 30% 30%;
+                margin-top: 5%;
+                margin-left: 15%;
+                padding-bottom: 50px;
+            }
+
+            .card-img-top {
+                width: 100%;
+                height: 70%;
+                object-fit: cover;
+            }
+
+            .mission {
+                text-align: center;
+            }
+
+            .mission p {
+                text-align: center;
+                margin-left: 50px;
+                margin-right: 50px;
+                margin-bottom: 5px;
+            }
+
+            footer {
+                text-align: center;
+                padding: 3px;
+                background-color: #7DFF70;
+                
+            }
+
+            footer a {
+                color: black;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+                font-size: 17px;
+                background-color: #7DFF70;
+            }
+            
+    </style>
+    <title>Contact Us</title>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 </head>
+
 <body>
+
     
+    <div class="topnav">
+        <a class="active" href="#home"><b>Home</b></a>
+        <a href="#news"><b>News</b></a>
+        <a href="#contact"><b>Contact</b></a>
+        <a href="#about"><b>About</b></a>
+
+       
+    </div>
+
+
+    <div class="header">
+        <h1>About Us</h1>
+    </div>
+
+    <div class="pic">
+        <img src="images/earth.svg">
+    </div>
+
+    <div class="slogan">
+        <header>Stay Green with WeCO!</header>
+    </div>
+
+    <div class="bios">
+        <div class="card" style="width: 18rem;">
+            <img class="card-img-top" src="/images/geetika.jpg" alt="Card image cap">
+            <div class="card-body">
+                <p class="card-text">Geetika is, WeCO's one and only multitasker. Working in collaboration with
+                    both the front and back-end of our application, Geetika has produced the content, design, you name
+                    it! Have an extraordinary time experiencing the various features incorporated into WeCO with
+                    help of Geetika’s ideologies.
+
+                </p>
+            </div>
+        </div>
+
+        <div class="card" style="width: 18rem;">
+            <img class="card-img-top" src="/images/danni.jpg" alt="Card image cap">
+            <div class="card-body">
+                <p class="card-text">Danni is WeCO's number one technalist; she manages everything behind the scenes,
+                    and makes sure that your journey throughout WeCO is successful from the beginning to the end.</p>
+            </div>
+        </div>
+
+        <div class="card" style="width: 18rem;">
+            <img class="card-img-top" src="/images/wendy.jpg" alt="Card image cap">
+            <div class="card-body">
+                <p class="card-text">Wendy is WeCO's top-tier stylist. With her innovative ideas, she’s given this
+                    application its personality. From color-contrasting, to font decisions, to layouts, Wendy’s done it
+                    all. Next time you’re scrolling through WeCO, take a look at all the mind-blowing details put
+                    into the application to make it stand out!</p>
+            </div>
+        </div>
+
+
+
+    </div>
+
+    <div class="mission">
+        <header 1><b>Our Mission</b></header>
+        <p>To establish a cleaner carbon footprint whilst encouraging group engagments. Work together and strive
+            together</p>
+    </div>
+
+    <footer>
+
+            <p class="about"><a href="#About Us">About Us</a></p>
+            <p class="contact"><a href="#Contact Us">Contact Us</a></p>
+        </p>
+    </footer>
+
 </body>
+
 </html>
