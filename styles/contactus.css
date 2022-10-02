@@ -84,18 +84,27 @@ h1 {
             visibility: hidden;
             padding: 15px 30px 25px;
             box-sizing: border-box;
+            font-family: 'patrick hand', cursive;
         }
-
+        
         .thankyou-openpopup {
             visibility: visible;
         }
-
+        
+        #tick {
+            width: 100px;
+            margin-top: -60px;
+            border-radius: 50%;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+        
         #back {
             text-decoration: none;
             color: black;
             padding: 3px 5px;
-            background-color: #003CFF;
+            background-color: #4290d8;
             cursor: pointer;
+            font-family: 'patrick hand', cursive;
             border-radius: 8px;
         }
 
