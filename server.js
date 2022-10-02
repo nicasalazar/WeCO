@@ -19,7 +19,14 @@ app.get('/contactus', function (req, res) {
 });
 
 app.get('/leaderboard', function (req, res) {
-    res.sendFile(__dirname + '/views/leaderboard.html');
+    res.sendFile(__dirname + '/views/leaderboard.html')});
+
+app.get('/aboutus', function (req, res) {
+    res.sendFile(__dirname + '/views/aboutus.html');
+});
+
+app.get('/eventgallery', function (req, res) {
+    res.sendFile(__dirname + '/views/eventgallery.html');
 });
 
 app.post('/submit-student-data', function (req, res) {
