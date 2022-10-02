@@ -7,16 +7,17 @@ entreprenHer is a platform designed by women for women to promote small business
 
 ## Viewing The App
 ```
-Clone our git hub repo 
+Clone our git hub repo: https://github.com/nicasalazar/WeCO.git
 ```
 ```
 npm install -y
 ```
-
+```
 npm install express
 ```
 ```
 node server.js
+```
 ```
 head to http://localhost:5000
 ```
