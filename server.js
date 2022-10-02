@@ -44,22 +44,3 @@ app.post('/submit-student-data', function (req, res) {
 var server = app.listen(5000, function () {
     console.log('Node server is running http://localhost:5000');
 });
-
-let http = require('http');
-let url = require('url'); 
-const res = require("express/lib/response"); 
-
-http.createServer((req,res) => {
-let q = url.parse(req.url, ture); 
-console.log(q.query); 
-
-res.writeHead(200, {
-"Content-Type": "text/html",
-"Access-Control-Allow-Origin": "*"
-}); 
-
-res.end(`Hello ${q.query['name']}`); 
-})
-
-let port = 5000; 
-app.listen(process.env.PORT || 5000);
