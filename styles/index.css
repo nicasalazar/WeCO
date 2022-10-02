@@ -24,17 +24,19 @@
 
     .back {
       text-decoration: none;
-      color: black;
-      padding: 3px 5px;
+      color: white;
+      padding: 8px 10px;
       cursor: pointer;
-      border-radius: 8px;
+      border-radius: 4px;
+      background-color: #003CFF;
     }
 
-    @media screen and (max-width: 800px) {
-      .thankyou-popup {
-        width: 300px;
-        font-size: 11pt;
-      }
+    .back:hover{
+      background-color: darkblue;
+    }
+
+    .missionP{
+      margin-bottom: 10%;
     }
 
     button {
@@ -49,20 +51,27 @@
       border-radius: 15px;
     }
 
+    .buttons{
+      display: grid;
+      grid-template-columns: 50% 50%;
+    }
+
     .button1 {
       position: absolute; 
       right: 250px; 
       bottom:200px; 
+      grid-column: 1 / 1;
     }
 
     .button2 {
       position: absolute; 
       left: 1000px; 
       bottom:200px; 
+      grid-column: 2 / 2;
     }
 
     button:hover {
-      background-color: #0d66ba;
+      background-color: darkblue;
     }
 
     #app-name {
@@ -111,6 +120,7 @@
       text-shadow: -1px 0 black, 0 1px black, 2px 0 black, 0 -1px black;
       font-size: 30pt;
     }
+    
     .welcome h1 {
       font-size: 30px;
       text-align: center;
@@ -121,3 +131,16 @@
       display: block;
       width: 50%;
     }
+    
+    button.event{
+    border-radius: 20px;
+    font-size: 25pt;
+    }
+
+  .goback{
+    margin-left:-40%;
+  }
+
+  .face{
+    margin-left: 30%;
+  }
