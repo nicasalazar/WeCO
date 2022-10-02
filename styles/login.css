@@ -4,8 +4,18 @@
     color: #0DDB36;
     text-shadow: -1px 0 black, 0 1px black, 2px 0 black, 0 -1px black; 
     position: absolute;
-    bottom: 500px; 
-    right: 300px; 
+    bottom: 600px; 
+    left: 700px; 
+  }
+
+  .pic img{
+    position: absolute; 
+    display: block; 
+    width: 15%;
+    height: 30%; 
+    left: 685px;
+    top:150px;  
+    
   }
 
   label{
@@ -47,6 +57,9 @@
           width: 38%;
           height: 20%;   
           background-color: #003CFF;  
+          position: absolute; 
+          left: 490px; 
+          top:400px; 
       }   
 
       input[type=submit] {
