@@ -9,6 +9,7 @@ app.use(bodyParser.urlencoded({
 app.use("/images", express.static("./images"));
 app.use("/views", express.static("./views"));
 app.use("/scripts", express.static("./scripts"));
+app.use("/styles", express.static("./styles"));
 
 app.get('/', function (req, res) {
     res.sendFile(__dirname + '/views/main.html');
