@@ -25,13 +25,13 @@
     }
 
     .thankyou-popup {
-      background-color: #003CFf;
+      background-color: #07BB2B;
       border-radius: 6px;
       position: absolute;
       text-align: center;
-      color: black;
+      color: white;
       font-weight: bold;
-      top: 50%;
+      top: 30%;
       left: 50%;
       transform: translate(-50%, 0%);
       visibility: hidden;
@@ -48,20 +48,11 @@
       visibility: visible;
     }
 
-    #tick {
-      width: 100px;
-      margin-top: -60px;
-      border-radius: 50%;
-      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-    }
-
-    #back {
+    .back {
       text-decoration: none;
       color: black;
       padding: 3px 5px;
-      background-color: #003CFF;
       cursor: pointer;
-      font-family: 'patrick hand', cursive;
       border-radius: 8px;
     }
 
@@ -171,19 +162,26 @@
   </div>
   <button type="Daily Mission" value="generate" onclick="openPopup()">Daily Mission</button>
   <div class="thankyou-popup" id="thankyou-popup">
-    <img src="/images/Confirmation_Icon.png" alt="tick">
-    <h2>Bring your tumbler to work!</h2>
+    <img src="/images/smileyface.svg" alt="smile" width="50" height="50">
+    <h2><b>Bring your tumbler to work!</b></h2>
     <p>Reusable cup can help you to
       <br>
       reduce the usage of paper or plastic cup!</p>
-    <a href="/" id="back">Back</a>
+    <a href="/" class="back">Back</a>
+    <br>
+    <a href="/eventgallery" class="back">Upload Photo</a>
   </div>
   <button type="Weekly Event" value="generate" onclick="openPopup1()">Weekly Event</button>
   <div class="thankyou-popup" id="group-popup">
-    <img src="/images/Confirmation_Icon.png" alt="tick">
-    <h2>Vegetarian Day!</h2>
-    <p>No meat today! Become a rabbit :)</p>
-    <a href="/" id="back">Back</a>
+    <img src="/images/smileyface.svg" alt="smile" width="50" height="50">
+    <h2><b>Vegetarian Day!</b></h2>
+    <p>Eating less meat can help reduce pressure on
+      <br>forests and land used to grow animal feed.
+      <br>
+      No meat today! Become a rabbit :)</p>
+    <a href="/" class="back">Back</a>
+    <br>
+    <a href="/eventgallery" class="back">Upload Photo</a>
   </div>
   <script>
     const popup = document.getElementById("thankyou-popup");
