@@ -3,27 +3,26 @@
 <head>  
 <meta name="viewport" content="width=device-width, initial-scale=1">  
 <link href="/styles/font.css" rel="stylesheet">
-<link href="/styles/font.css" rel="stylesheet">
+<link href="/styles/login.css" rel="stylesheet">
 <title> Login Page </title>  
 </head>    
 <body>    
-    <center> <div class="pic">
-        <img src="/images/earth.svg">
-    </div></center>   
+  <div class="center">
+    <div id="app-name">WeCO</div>
+    <div class="pic">
+        <img src="/images/earth.svg" width="15%">
+    </div>
     <form>  
         <div class="container">   
-            <label>Username : </label>   
+            <label>USERNAME </label>   
             <input type="text" placeholder="Enter Username" name="username" required>  
-            <label>Password : </label>   
+            <label>PASSWORD </label>   
             <input type="password" placeholder="Enter Password" name="password" required>  
-            <input type="submit" onClick="myFunction()"/>
-    <script>
-      function myFunction() {
-        window.location.href="/views/main.html";
-      }
-    </scrip>
-        </div>   
-    </form>     
+            <input type="submit" value="LOG IN" onClick="myFunction()"/>
+         </div> 
+    </form>
+  </div>      
+  <script src="/scripts/login.js"></script> 
 </body>     
 </html>  
 
