@@ -12,7 +12,7 @@ app.use("/scripts", express.static("./scripts"));
 app.use("/styles", express.static("./styles"));
 
 app.get('/', function (req, res) {
-    res.sendFile(__dirname + '/views/main.html');
+    res.sendFile(__dirname + '/views/login.html');
 });
 
 app.get('/login', function (req, res) {
