@@ -27,18 +27,19 @@
         <a class="active" href="/views/main.html"><b>Home</b></a>
         <a href="/views/leaderboard.html"><b>Leaderboard</b></a>
         <a href="/views/eventgallery.html"><b>Event Gallery</b></a>
+        <a id="logout" href="/views/login.html"><b>Log Out</b></a>
     </div>
     <div class="header">
-        <h1>Contact Us</h1>
+        <h1><b>Contact Us</b></h1>
     </div>
     <div id="contactus-page">
         <form id="contact-form">
-            <h2>We'd love to hear from you!
+            <h4>We'd love to hear from you!
                 <br>
                 Please feel free to reach us
                 <br>
                 if you have any feedback or inquiries!
-            </h2>
+            </h4>
             <label>Name</label>
             <input type="text" id="user_name" name="user_name" required>
             <br>
@@ -46,7 +47,7 @@
             <input type="text" id="user_email" name="user_email" required>
             <br>
             <label>Message</label>
-            <textarea id="message" name="message" rows="6" required></textarea>
+            <textarea id="message" name="message" rows="3" required></textarea>
             <br>
             <input type="submit" value="Send" onclick="openPopup()">
         </form>
@@ -62,6 +63,7 @@
             <p>&copy; BCIT Women In Computing</p>
         </div>
     </footer>
+    <script src="/scripts/thankyou.js"></script>
 </body>
 
 </html>
