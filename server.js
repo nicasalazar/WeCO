@@ -15,6 +15,10 @@ app.get('/', function (req, res) {
     res.sendFile(__dirname + '/views/main.html');
 });
 
+app.get('/login', function (req, res) {
+    res.sendFile(__dirname + '/views/login.html');
+});
+
 app.get('/contactus', function (req, res) {
     res.sendFile(__dirname + '/views/contactus.html');
 });

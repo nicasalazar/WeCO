@@ -5,6 +5,9 @@
   <title>WeCO</title>
   <meta name="author" content="BCIT">
   <link href="/styles/font.css" rel="stylesheet">
+  <link href="/styles/index.css" rel="stylesheet">
+  <link href="/styles/footer.css" rel="stylesheet">
+  <link href="/styles/nav.css" rel="stylesheet">
 
   <!-- Required meta tags -->
   <meta charset="utf-8">
@@ -18,159 +21,16 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
   </script>
-  <style>
-    @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300&display=swap%27');
-
-
-     /* Add a black background color to the top navigation */
-     .topnav {
-            background-color: #7DFF70;
-            overflow: hidden;
-
-        }
-
-        /* Style the links inside the navigation bar */
-        .topnav a {
-            float: left;
-            color: black;
-            text-align: center;
-            padding: 14px 16px;
-            text-decoration: none;
-            font-size: 17px;
-        }
-
-        /* Change the color of links on hover */
-        .topnav a:hover {
-            background-color: #ddd;
-            color: black;
-        }
-    * {
-      font-family: 'Manrope', sans-serif;
-    }
-
-    .thankyou-popup {
-      background-color: #07BB2B;
-      border-radius: 6px;
-      position: absolute;
-      text-align: center;
-      color: white;
-      font-weight: bold;
-      top: 30%;
-      left: 50%;
-      transform: translate(-50%, 0%);
-      visibility: hidden;
-      padding: 15px 30px 25px;
-      box-sizing: border-box;
-      font-family: 'patrick hand', cursive;
-    }
-
-    .thankyou-openpopup {
-      visibility: visible;
-    }
-
-    .group-openpopup {
-      visibility: visible;
-    }
-
-    .back {
-      text-decoration: none;
-      color: black;
-      padding: 3px 5px;
-      cursor: pointer;
-      border-radius: 8px;
-    }
-
-    @media screen and (max-width: 800px) {
-      .thankyou-popup {
-        width: 300px;
-        font-size: 11pt;
-      }
-    }
-
-    button {
-      background-color: #003CFF;
-      border: none;
-      font-weight: bold;
-      color: white;
-      padding: 10px 20px;
-      text-decoration: none;
-      cursor: pointer;
-      margin-top: 1%;
-      border-radius: 15px;
-    }
-
-    button:hover {
-      background-color: #0d66ba;
-    }
-
-    #app-name {
-      font-size: 50pt;
-      font-weight: bold;
-      color: #0DDB36;
-      text-shadow: -1px 0 black, 0 1px black, 2px 0 black, 0 -1px black;
-    }
-
-    .res-circle {
-      /* (A) PERCENTAGE WIDTH & BORDER RADIUS */
-      width: 15%;
-      border-radius: 45%;
-
-      /* (B) BACKGROUND COLOR */
-      background: #07BB2B;
-
-      /* (C) NECESSARY TO POSITION TEXT BLOCK */
-      line-height: 0;
-      position: relative;
-    }
-
-    /* (D) MATCH HEIGHT */
-    .res-circle::after {
-      content: "";
-      display: block;
-      padding-bottom: 100%;
-    }
-
-    /* (E) TEXT BLOCK */
-    .circle-txt {
-      /* (E1) CENTER TEXT IN CIRCLE */
-      position: absolute;
-      bottom: 50%;
-      width: 100%;
-      text-align: center;
-
-      /* (E2) THE FONT - NOT REALLY IMPORTANT */
-      font-weight: bold;
-      color: yellow;
-      text-shadow: -1px 0 black, 0 1px black, 2px 0 black, 0 -1px black;
-      font-size: 12pt;
-    }
-
-    footer {
-            text-align: center;
-            padding: 3px;
-            background-color: #7DFF70;
-
-        }
-
-        footer a {
-            color: black;
-            text-align: center;
-            padding: 14px 16px;
-            text-decoration: none;
-            font-size: 17px;
-            background-color: #7DFF70;
-        }
-  </style>
+  <title>WeCO</title>
 </head>
 
 <body>
-  
   <div class="topnav">
     <a class="active" href="/views/main.html"><b>Home</b></a>
     <a href="/views/leaderboard.html"><b>Leaderboard</b></a>
     <a href="/views/eventgallery.html"><b>Event Gallery</b></a>
+    <a id="logout" href="/views/login.html"><b>Log Out</b></a>
 </div>
-
   <div id="app-name">WeCO</div>
   <div class="res-circle">
     <div class="circle-txt">You've earned 77 points!
@@ -183,7 +43,7 @@
     <p>Reusable cup can help you to
       <br>
       reduce the usage of paper or plastic cup!</p>
-    <a href="/" class="back">Back</a>
+    <a href="/" class="back">Participate</a>
     <br>
     <a href="/eventgallery" class="back">Upload Photo</a>
   </div>
@@ -195,28 +55,19 @@
       <br>forests and land used to grow animal feed.
       <br>
       No meat today! Become a rabbit :)</p>
-    <a href="/" class="back">Back</a>
+    <a href="/" class="back">Participate</a>
     <br>
     <a href="/eventgallery" class="back">Upload Photo</a>
   </div>
-
   <footer>
-    <p class="about"><a href="/views/aboutus.html">About Us</a></p>
-    <p class="contact"><a href="/views/contactus.html">Contact Us</a></p>
+    <div id="footercontainer">
+        <ul class="bottom">
+            <li id="firstitem"><a href="/views/aboutus.html">about us</a></li>
+            <li><a href="/views/contactus.html">contact us</a></li>
+        </ul>
+        <p>&copy; BCIT Women In Computing</p>
+    </div>
 </footer>
-
-  <script>
-    const popup = document.getElementById("thankyou-popup");
-
-    function openPopup() {
-      popup.classList.add("thankyou-openpopup");
-    }
-    const popup1 = document.getElementById("group-popup");
-
-    function openPopup1() {
-      popup1.classList.add("group-openpopup");
-    }
-  </script>
 </body>
-
+<script src="/scripts/popup.js"></script>
 </html>

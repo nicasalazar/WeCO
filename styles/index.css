@@ -1,0 +1,96 @@
+    .thankyou-popup {
+      background-color: #07BB2B;
+      border-radius: 6px;
+      position: absolute;
+      text-align: center;
+      color: white;
+      font-weight: bold;
+      top: 30%;
+      left: 50%;
+      transform: translate(-50%, 0%);
+      visibility: hidden;
+      padding: 15px 30px 25px;
+      box-sizing: border-box;
+      font-family: 'patrick hand', cursive;
+    }
+
+    .thankyou-openpopup {
+      visibility: visible;
+    }
+
+    .group-openpopup {
+      visibility: visible;
+    }
+
+    .back {
+      text-decoration: none;
+      color: black;
+      padding: 3px 5px;
+      cursor: pointer;
+      border-radius: 8px;
+    }
+
+    @media screen and (max-width: 800px) {
+      .thankyou-popup {
+        width: 300px;
+        font-size: 11pt;
+      }
+    }
+
+    button {
+      background-color: #003CFF;
+      border: none;
+      font-weight: bold;
+      color: white;
+      padding: 10px 20px;
+      text-decoration: none;
+      cursor: pointer;
+      margin-top: 1%;
+      border-radius: 15px;
+    }
+
+    button:hover {
+      background-color: #0d66ba;
+    }
+
+    #app-name {
+      font-size: 50pt;
+      font-weight: bold;
+      color: #0DDB36;
+      text-shadow: -1px 0 black, 0 1px black, 2px 0 black, 0 -1px black;
+    }
+
+    .res-circle {
+      /* (A) PERCENTAGE WIDTH & BORDER RADIUS */
+      width: 15%;
+      border-radius: 45%;
+
+      /* (B) BACKGROUND COLOR */
+      background: #07BB2B;
+
+      /* (C) NECESSARY TO POSITION TEXT BLOCK */
+      line-height: 0;
+      position: relative;
+    }
+
+    /* (D) MATCH HEIGHT */
+    .res-circle::after {
+      content: "";
+      display: block;
+      padding-bottom: 100%;
+    }
+
+    /* (E) TEXT BLOCK */
+    .circle-txt {
+      /* (E1) CENTER TEXT IN CIRCLE */
+      position: absolute;
+      bottom: 50%;
+      width: 100%;
+      text-align: center;
+
+      /* (E2) THE FONT - NOT REALLY IMPORTANT */
+      font-weight: bold;
+      color: yellow;
+      text-shadow: -1px 0 black, 0 1px black, 2px 0 black, 0 -1px black;
+      font-size: 12pt;
+    }
