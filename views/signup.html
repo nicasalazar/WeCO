@@ -5,15 +5,65 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
+
+         /* Add a black background color to the top navigation */
+         .topnav {
+            background-color: #7DFF70;
+            overflow: hidden;
+
+        }
+
+        /* Style the links inside the navigation bar */
+        .topnav a {
+            float: left;
+            color: black;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+        }
+
+        /* Change the color of links on hover */
+        .topnav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
         @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300&display=swap%27');
         
         * {
         font-family: 'Manrope', sans-serif;
         }
+
+        footer {
+            text-align: center;
+            padding: 3px;
+            background-color: #7DFF70;
+
+        }
+
+        footer a {
+            color: black;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+            background-color: #7DFF70;
+        }
         </style>
     <title>signup</title>
 </head>
 <body>
+
+    <div class="topnav">
+        <a class="active" href="/views/main.html"><b>Home</b></a>
+        <a href="/views/leaderboard.html"><b>Leaderboard</b></a>
+        <a href="/views/eventgallery.html"><b>Event Gallery</b></a>
+    </div>
+
+    <footer>
+        <p class="about"><a href="/views/aboutus.html">About Us</a></p>
+        <p class="contact"><a href="/views/contactus.html">Contact Us</a></p>
+    </footer>
     
 </body>
 </html>
