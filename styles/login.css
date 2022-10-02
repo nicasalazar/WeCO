@@ -52,14 +52,14 @@
       }   
        
    .container {   
-          padding: 15px;
+          padding: 30px;
           border-radius: 20px;
           width: 38%;
           height: 20%;   
           background-color: #003CFF;  
           position: absolute; 
-          left: 490px; 
-          top:400px; 
+          left: 470px; 
+          top:350px; 
       }   
 
       input[type=submit] {

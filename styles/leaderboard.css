@@ -10,7 +10,7 @@ height: 550px;
 width: 800px;
 background-color: #0DDB36;
 margin-bottom: 5%;
-margin-left: 20%;
+margin-left: 22%;
 }
 
 p{
@@ -37,4 +37,45 @@ h1{
 margin-left: 41%;
 font-size: 50pt;
 margin-top: 10%;
+}
+
+#footercontainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: lightgreen;
+    color: black;
+    text-align: center;
+  }
+
+.bottom {
+    list-style: none;
+    text-align: left;
+    margin-top: 15px;
+}
+
+.bottom li {
+    display: inline;
+}
+
+.bottom li a {
+    text-decoration: none;
+    color: black;
+}
+
+#firstitem {
+    margin-right: 15px;
+}
+
+
+
+.bottom a:hover {
+    color: darkgreen;
 }
