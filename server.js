@@ -31,6 +31,10 @@ app.get('/eventgallery', function (req, res) {
     res.sendFile(__dirname + '/views/eventgallery.html');
 });
 
+app.get('/login', function (req, res) {
+    res.sendFile(__dirname + '/views/login.html');
+});
+
 app.post('/submit-student-data', function (req, res) {
     var name = req.body.firstName + ' ' + req.body.lastNam
 
