@@ -5,6 +5,7 @@ var bodyParser = require("body-parser");
 app.use(bodyParser.urlencoded({ extended: false }));
 
 app.use("/images", express.static("./images"));
+app.use("/views", express.static("./views"));
 
 app.get('/', function (req, res) {
     res.sendFile(__dirname + '/views/main.html');
@@ -12,6 +13,10 @@ app.get('/', function (req, res) {
 
 app.get('/contactus', function (req, res) {
     res.sendFile(__dirname + '/views/contactus.html');
+});
+
+app.get('/leaderboard', function (req, res) {
+    res.sendFile(__dirname + '/views/leaderboard.html');
 });
 
 app.post('/submit-student-data', function (req, res) {
