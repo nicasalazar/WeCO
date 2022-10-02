@@ -9,111 +9,110 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300&display=swap%27');
 
-            /* Add a black background color to the top navigation */
-            .topnav {
-                background-color: #7DFF70;
-                overflow: hidden;
+        /* Add a black background color to the top navigation */
+        .topnav {
+            background-color: #7DFF70;
+            overflow: hidden;
 
-            }
+        }
 
-            /* Style the links inside the navigation bar */
-            .topnav a {
-                float: left;
-                color: black;
-                text-align: center;
-                padding: 14px 16px;
-                text-decoration: none;
-                font-size: 17px;
-            }
+        /* Style the links inside the navigation bar */
+        .topnav a {
+            float: left;
+            color: black;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+        }
 
-            /* Change the color of links on hover */
-            .topnav a:hover {
-                background-color: #ddd;
-                color: black;
-            }
+        /* Change the color of links on hover */
+        .topnav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
 
 
-            * {
-                font-family: 'Manrope', sans-serif;
-            }
+        * {
+            font-family: 'Manrope', sans-serif;
+        }
 
-            body {
-                padding: 0;
-            }
+        body {
+            padding: 0;
+        }
 
-            h1 {
-                margin: auto;
-                font-size: 20pt;
-                padding: 1%;
-                max-width: 95%;
-                text-align: center;
-                border-radius: 100px;
-            }
+        h1 {
+            margin: auto;
+            font-size: 20pt;
+            padding: 1%;
+            max-width: 95%;
+            text-align: center;
+            border-radius: 100px;
+        }
 
-            .header {
-                padding-top: 20px;
-                color: black;
-                margin: auto;
-                line-height: 50px;
-            }
+        .header {
+            padding-top: 20px;
+            color: black;
+            margin: auto;
+            line-height: 50px;
+        }
 
-            .pic {
-                display: block;
-                margin-left: 600px;
-                width: 50%;
+        .pic {
+            display: block;
+            margin-left: 600px;
+            width: 50%;
 
-            }
+        }
 
-            .slogan {
-                margin: auto;
-                font-size: 20pt;
-                padding: 1%;
-                max-width: 95%;
-                text-align: center;
-                border-radius: 100px;
-            }
+        .slogan {
+            margin: auto;
+            font-size: 20pt;
+            padding: 1%;
+            max-width: 95%;
+            text-align: center;
+            border-radius: 100px;
+        }
 
-            .bios {
-                display: grid;
-                grid-template-columns: 30% 30% 30%;
-                margin-top: 5%;
-                margin-left: 15%;
-                padding-bottom: 50px;
-            }
+        .bios {
+            display: grid;
+            grid-template-columns: 30% 30% 30%;
+            margin-top: 5%;
+            margin-left: 15%;
+            padding-bottom: 50px;
+        }
 
-            .card-img-top {
-                width: 100%;
-                height: 70%;
-                object-fit: cover;
-            }
+        .card-img-top {
+            width: 100%;
+            height: 70%;
+            object-fit: cover;
+        }
 
-            .mission {
-                text-align: center;
-            }
+        .mission {
+            text-align: center;
+        }
 
-            .mission p {
-                text-align: center;
-                margin-left: 50px;
-                margin-right: 50px;
-                margin-bottom: 5px;
-            }
+        .mission p {
+            text-align: center;
+            margin-left: 50px;
+            margin-right: 50px;
+            margin-bottom: 5px;
+        }
 
-            footer {
-                text-align: center;
-                padding: 3px;
-                background-color: #7DFF70;
-                
-            }
+        footer {
+            text-align: center;
+            padding: 3px;
+            background-color: #7DFF70;
 
-            footer a {
-                color: black;
-                text-align: center;
-                padding: 14px 16px;
-                text-decoration: none;
-                font-size: 17px;
-                background-color: #7DFF70;
-            }
-            
+        }
+
+        footer a {
+            color: black;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+            background-color: #7DFF70;
+        }
     </style>
     <title>Contact Us</title>
     <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
@@ -121,23 +120,19 @@
 
 <body>
 
-    
+
     <div class="topnav">
-        <a class="active" href="#home"><b>Home</b></a>
-        <a href="#news"><b>News</b></a>
-        <a href="#contact"><b>Contact</b></a>
-        <a href="#about"><b>About</b></a>
-
-       
+        <a class="active" href="/views/main.html"><b>Home</b></a>
+        <a href="/views/leaderboard.html"><b>Leaderboard</b></a>
+        <a href="/views/eventgallery.html"><b>Event Gallery</b></a>
     </div>
-
 
     <div class="header">
         <h1>About Us</h1>
     </div>
 
     <div class="pic">
-        <img src="images/earth.svg">
+        <img src="/images/earth.svg">
     </div>
 
     <div class="slogan">
@@ -174,9 +169,6 @@
                     into the application to make it stand out!</p>
             </div>
         </div>
-
-
-
     </div>
 
     <div class="mission">
@@ -186,10 +178,8 @@
     </div>
 
     <footer>
-
-            <p class="about"><a href="#About Us">About Us</a></p>
-            <p class="contact"><a href="#Contact Us">Contact Us</a></p>
-        </p>
+        <p class="about"><a href="/views/aboutus.html">About Us</a></p>
+        <p class="contact"><a href="/views/contactus.html">Contact Us</a></p>
     </footer>
 
 </body>
