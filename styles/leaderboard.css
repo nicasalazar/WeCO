@@ -1,0 +1,40 @@
+img{
+    width: 250px;
+    margin-left: 40%;
+    margin-bottom: 1%;
+    margin-top: 5%;
+}
+
+.rectangle {
+height: 550px;
+width: 800px;
+background-color: #0DDB36;
+margin-bottom: 5%;
+margin-left: 20%;
+}
+
+p{
+position: absolute;
+display: grid;
+grid-template-columns: 50% 50%;
+}
+
+#one{
+margin-left: 30%;
+font-weight: bold;
+font-size: 25pt;
+color: #FFD233;
+}
+
+#two{
+margin-left: 60%;
+font-weight: bold;
+font-size: 25pt;
+color: #FFD233;
+}
+
+h1{
+margin-left: 41%;
+font-size: 50pt;
+margin-top: 10%;
+}

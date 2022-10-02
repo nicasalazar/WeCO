@@ -4,6 +4,10 @@
 <head>
   <title>WeCO</title>
   <meta name="author" content="BCIT">
+  <link href="/styles/font.css" rel="stylesheet">
+  <link href="/styles/index.css" rel="stylesheet">
+  <link href="/styles/footer.css" rel="stylesheet">
+  <link href="/styles/nav.css" rel="stylesheet">
 
   <!-- Required meta tags -->
   <meta charset="utf-8">
@@ -198,6 +202,11 @@
 
 <body>
 
+  </script>
+  <title>WeCO</title>
+</head>
+
+<body>
   <div class="topnav">
     <a class="active" href="/views/main.html"><b>Home</b></a>
     <a href="/views/leaderboard.html"><b>Leaderboard</b></a>
@@ -214,6 +223,8 @@
     <img class="image" src="/images/green.jpg">
 
 
+    <a id="logout" href="/views/login.html"><b>Log Out</b></a>
+</div>
   <div id="app-name">WeCO</div>
   <div class="res-circle">
     <div class="circle-txt">Points: 77
@@ -229,9 +240,8 @@
     <h2><b>Bring your tumbler to work!</b></h2>
     <p>Reusable cup can help you to
       <br>
-      reduce the usage of paper or plastic cup!
-    </p>
-    <a href="/" class="back">Back</a>
+      reduce the usage of paper or plastic cup!</p>
+    <a href="/" class="back">Participate</a>
     <br>
     <a href="/eventgallery" class="back">Upload Photo</a>
   </div>
@@ -244,31 +254,20 @@
     <p>Eating less meat can help reduce pressure on
       <br>forests and land used to grow animal feed.
       <br>
-      No meat today! Become a rabbit :)
-    </p>
-    <a href="/" class="back">Back</a>
+      No meat today! Become a rabbit :)</p>
+    <a href="/" class="back">Participate</a>
     <br>
     <a href="/eventgallery" class="back">Upload Photo</a>
   </div>
-
-
   <footer>
-    <p class="about"><a href="/views/aboutus.html">About Us</a></p>
-    <p class="contact"><a href="/views/contactus.html">Contact Us</a></p>
-  </footer>
-
-  <script>
-    const popup = document.getElementById("thankyou-popup");
-
-    function openPopup() {
-      popup.classList.add("thankyou-openpopup");
-    }
-    const popup1 = document.getElementById("group-popup");
-
-    function openPopup1() {
-      popup1.classList.add("group-openpopup");
-    }
-  </script>
+    <div id="footercontainer">
+        <ul class="bottom">
+            <li id="firstitem"><a href="/views/aboutus.html">about us</a></li>
+            <li><a href="/views/contactus.html">contact us</a></li>
+        </ul>
+        <p>&copy; BCIT Women In Computing</p>
+    </div>
+</footer>
 </body>
-
+<script src="/scripts/popup.js"></script>
 </html>

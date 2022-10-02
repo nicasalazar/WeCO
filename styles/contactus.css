@@ -1,0 +1,101 @@
+#contactus-page{
+    margin-bottom: 20px;
+}
+
+h1 {
+            font-size: 35pt;
+            padding: 1%;
+            text-align: center;
+        }
+
+        .header {
+            padding-top: 20px;
+            color: black;
+            margin: auto;
+            line-height: 50px;
+        }
+
+        #contactus-page {
+            display: grid;
+            grid-template-columns: 50% 50%;
+        }
+
+        h4 {
+            text-align: center;
+            margin-bottom: 5%;
+            margin-left: -2%;
+        }
+
+        #contact {
+            width: 80%;
+            margin-left: 12%;
+            margin-top: -10%;
+        }
+
+        label {
+            font-size: 12pt;
+            text-align: left;
+        }
+
+        #contact-form {
+            margin-left: 10%;
+            margin-top: 5%;
+        }
+
+        input[type="text"],
+        textarea {
+            border: 2px solid #4290D8;
+            border-radius: 4px;
+            width: 95%;
+            resize: none;
+        }
+
+        input:focus,
+        textarea:focus {
+            background-color: #F5DFBB;
+        }
+
+        input[type=submit] {
+            background-color: #003CFF;
+            border: none;
+            font-weight: bold;
+            color: #F5DFBB;
+            padding: 8px 15px;
+            text-decoration: none;
+            cursor: pointer;
+            margin-top: 1%;
+            border-radius: 15px;
+        }
+
+        input[type=submit]:hover {
+            background-color: #0d66ba;
+        }
+
+        .thankyou-popup {
+            background-color: #f5dfbb;
+            border-radius: 6px;
+            position: absolute;
+            text-align: center;
+            color: black;
+            font-weight: bold;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, 0%);
+            visibility: hidden;
+            padding: 15px 30px 25px;
+            box-sizing: border-box;
+        }
+
+        .thankyou-openpopup {
+            visibility: visible;
+        }
+
+        #back {
+            text-decoration: none;
+            color: black;
+            padding: 3px 5px;
+            background-color: #003CFF;
+            cursor: pointer;
+            border-radius: 8px;
+        }
+
