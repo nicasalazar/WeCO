@@ -56,9 +56,10 @@ h1 {
 .mission h1 {
     color: black;
     margin: auto;
-    line-height: 50px;
+    line-height: px;
     text-align: center;
     font-size: 35pt;
+    margin-top: 20px;
 
 }
 
@@ -67,6 +68,14 @@ h1 {
     margin-left: 50px;
     margin-right: 50px;
     font-size: 20px;
+    margin-top: -10px;
 
     
+}
+
+.team {
+    font-size: 20pt;
+   text-align: center;
+   position: relative;
+   top: 60px; 
 }

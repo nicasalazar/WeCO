@@ -130,6 +130,8 @@
     .image {
       display: block;
       width: 50%;
+      position:absolute;
+      left: 20px; 
     }
     
     button.event{
